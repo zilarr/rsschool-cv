@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>    
 </head>
 <body>
     <header class="header">
@@ -100,43 +97,6 @@
                     </div>
                     <a href="https://reverent-mirzakhani-9af1ad.netlify.app/" target="_blank"><img class="projects_img" src="img/project3.jpg" alt="Dino"></a>
                 </div>
-            </div>
-        </section>
-        <section class="code" id="example">
-            <div class="container">
-                <h2 class="section-title">Example code</h2>
-                <pre>
-                    <code>module.exports = function toReadable (number) {
-                        const simpleCardinalNumbers = ['zero','one','two','three','four', 'five',
-                        'six','seven','eight','nine','ten','eleven','twelve', 'thirteen',
-                        'fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
-                        const dozens = ['', '','twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
-                        const hundreds = ['','one hundred', 'two hundred', 'three hundred', 'four hundred',
-                        'five hundred','six hundred', 'seven hundred', 'eight hundred', 'nine hundred'];
-                    
-                            if (number &lt; 20) {
-                                return simpleCardinalNumbers[number];
-                            }
-                            if (number % 10 !== 0  && number &lt; 100) {
-                                return (dozens[Math.floor(number / 10)] + ' ' + simpleCardinalNumbers[number % 10]);
-                            }
-                            if (number % 10 == 0 && number &lt; 100) {
-                                return dozens[number/10];
-                            }
-                            if (number % 100 == 0) {
-                                return hundreds[number/100];
-                            }
-                            if ((number % 100) &lt; 20 ) {
-                                return (hundreds[Math.floor(number/100)] + ' ' + simpleCardinalNumbers[number % 100]);
-                            }
-                            if (number % 10 == 0) {
-                                return (hundreds[Math.floor(number/100)] + ' ' + dozens[Math.floor(number / 10) % 10]);
-                            }
-                            if (number % 100 !== 0) {
-                                return (hundreds[Math.floor(number/100)] + ' ' + dozens[Math.floor(number / 10) % 10] + ' ' + simpleCardinalNumbers[number % 10]);
-                            }
-                    };</code>
-                </pre>
             </div>
         </section>
     </main>
