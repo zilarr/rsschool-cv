@@ -13,7 +13,8 @@
             <section class="my_name">
                 <h1>Inna</h1>
                 <div class="contacts">
-                     <ul>
+                    <nav>
+                        <ul>
                         <li>
                             <a href="mailto:inna020108@gmail.com"><img src="img/mail_icon.png" alt="email"> email</a>
                         </li>
@@ -21,6 +22,7 @@
                             <a href="https://t.me/dipdlo"><img src="img/tg_icon.png" alt="tg"> telegram</a>
                         </li>
                     </ul>
+                    </nav>
                 </div>
             </section>
         </div>
@@ -70,7 +72,7 @@ let isAlive = setInterval ( function() {
     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
     let meteorLeft = parseInt(window.getComputedStyle(meteor).getPropertyValue("left"));
 
-    if (meteorLeft < 160 && meteorLeft > 0 && dinoTop >= 200) {
+    if (meteorLeft &lt; 160 && meteorLeft > 0 && dinoTop >= 200) {
         alert("ВСЕ")
     }
 }, 10 )
@@ -78,26 +80,26 @@ let isAlive = setInterval ( function() {
             </pre>
         </section>
         <section class="projects">
+            <h2>Projects</h2>
             <div class="project1">
-                 <h2>Projects</h2>
-                <a href="https://zilarr.github.io/todo" class="project1"><img alt="todo" src="./img/prjct1.png" class="project-img"></a>
+                <a href="https://zilarr.github.io/todo" class="project1"><img alt="todo" src="./img/prjct1.png" class="project_img"></a>
                     <div class="project_info1">
                       <h3>Todo</h3>
-                      <h5>An app for saving links. It was intended as a "to-do" app, but during its creation the plans changed</h5>
+                      <p>An app for saving links. It was intended as a "to-do" app, but during its creation the plans changed</p>
                     </div>
             </div>
         <div class="project2">
-          <a href="https://zilarr.github.io/dinogame/" class="project2"><img alt="dino" src="./img/prjct2.png" class="project-img"></a>
+          <a href="https://zilarr.github.io/dinogame/" class="project2"><img alt="dino" src="./img/prjct2.png" class="project_img"></a>
           <div class="project_info1">
                       <h3>Dino-game</h3>
-                      <h5>Mini browser game, I wanted to make a score table for it and many features. But I did not continue its development</h5>
+                      <p>Mini browser game, I wanted to make a score table for it and many features. But I did not continue its development</p>
                     </div>
         </div>
       </section>
         </main>
         <footer>
         <div class="date">2025</div>
-        <a  href="https://rs.school/js/"><img class="footer_img" src="img/rs_school_js.svg" alt="rsschool"></a>
+        <a  href="https://rs.school/courses/javascript-ru"><img class="footer_img" src="img/rs_school_js.svg" alt="rsschool"></a>
         <div class="github"><a href="https://github.com/zilarr">My GitHub</a></div>
     </footer>
 </body>
