@@ -25,5 +25,80 @@
             </section>
         </div>
     </header>
+     <main>
+        <section class="info">
+                <h2>About</h2>
+                <p>I learned to program back in school, but I still haven't connected my fate with this profession. Now I'm studying frontend for general development, maybe something will work out.</p>
+                <h2>Education</h2>
+                <p>MSTU STANKIN: Technosphere Safety (2019 - 2024)</p>
+                <h2>Work experince</h2>
+                <p>Yandex: Support Service</p>
+                <p>Moscow City Center for Occupational Health and Safety: Junior Engineer</p>
+                <h2>English level</h2>
+                <p>A2</p>
+        </section>
+        <aside class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>Figma</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </aside>
+        <section class="code">
+            <h2>Code example</h2>
+            <pre>
+                <code data-language="javascript" class="rainbow rainbow-show">
+const dino = document.getElementById("dino");
+const meteor = document.getElementById("meteor");
+
+document.addEventListener("keydown", function(event) {
+    jump();
+});
+
+function jump() {
+    if (dino.classList !="jump"){
+        dino.classList.add("jump")
+    }
+    setTimeout(function(){
+        dino.classList.remove("jump")
+    }, 300)
+}
+let isAlive = setInterval ( function() {
+    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    let meteorLeft = parseInt(window.getComputedStyle(meteor).getPropertyValue("left"));
+
+    if (meteorLeft < 160 && meteorLeft > 0 && dinoTop >= 200) {
+        alert("ВСЕ")
+    }
+}, 10 )
+            </code>
+            </pre>
+        </section>
+        <section class="projects">
+            <div class="project1">
+                 <h2>Projects</h2>
+                <a href="https://zilarr.github.io/todo" class="project1"><img alt="todo" src="./img/prjct1.png" class="project-img"></a>
+                    <div class="project_info1">
+                      <h3>Todo</h3>
+                      <h5>An app for saving links. It was intended as a "to-do" app, but during its creation the plans changed</h5>
+                    </div>
+            </div>
+        <div class="project2">
+          <a href="https://zilarr.github.io/dinogame/" class="project2"><img alt="dino" src="./img/prjct2.png" class="project-img"></a>
+          <div class="project_info1">
+                      <h3>Dino-game</h3>
+                      <h5>Mini browser game, I wanted to make a score table for it and many features. But I did not continue its development</h5>
+                    </div>
+        </div>
+      </section>
+        </main>
+        <footer>
+        <div class="date">2025</div>
+        <a  href="https://rs.school/js/"><img class="footer_img" src="img/rs_school_js.svg" alt="rsschool"></a>
+        <div class="github"><a href="https://github.com/zilarr">My GitHub</a></div>
+    </footer>
 </body>
 </html>
